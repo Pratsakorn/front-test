@@ -160,7 +160,7 @@ function Signup() {
                     <Link to='/confirm' state={{firstName: inputForm.firstName, lastName: inputForm.lastName, email: inputForm.email, dialCode: selectedCode, phoneNumber: inputForm.phoneNumber}}> 
                     <button className={`flex justify-center items-center w-[124px] h-[48px] group border rounded-full  
                      ${isFormValid ? "cursor-pointer transition delay-50 duration-300 ease-in-out hover:border-transparent border-[#1B1D22] hover:bg-[#25CDD9] hover:shadow-[0px_0px_10px_#25CDD9]" : "cursor-not-allowed text-[#AFB4C0] border-[#AFB4C0]"}`} disabled={!isFormValid}>
-                        <p className={`pop font-semibold text-[16px]
+                        <p className={`pop font-semibold text-[18px]
                         ${isFormValid ? "transition-colors duration-500 ease-in-out text-[#1B1D22] group-hover:text-white" : "text-[#AFB4C0]"}`}>Next</p>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.2929 5.63605L16.6669 11.0101L4.92893 11.0101C4.36325 11.0101 3.93898 11.4343 3.93898 12C3.93898 12.5657 4.36325 12.99 4.92893 12.99L16.6669 12.99L11.2929 18.364C10.8686 18.7882 10.8686 19.3539 11.2929 19.7782C11.7172 20.2024 12.2828 20.2024 12.7071 19.7782L19.7782 12.7071C19.8489 12.6364 19.9903 12.495 19.9903 12.3536C20.061 12.1414 20.061 11.8586 19.9903 11.6465C19.9903 11.505 19.8489 11.3636 19.7782 11.2929L12.7071 4.22183C12.2828 3.79757 11.7172 3.79757 11.2929 4.22183C10.8686 4.6461 10.8686 5.21178 11.2929 5.63605Z" 

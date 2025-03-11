@@ -8,14 +8,14 @@ function Confirm() {
     const { firstName, lastName, email, dialCode, phoneNumber } = location.state
     console.log(email)
   return (
-    <div className="h-screen w-screen bg-[url('/signup.svg')] bg-cover bg-center flex flex-col justify-center items-center">
+    <div className="h-screen w-full bg-[url('/signup.svg')] bg-cover bg-center flex flex-col justify-center items-center">
         <Navbar />
-        <div className='flex gap-[92px]'>
+        <div className='flex justify-between lg:items-center sm:items-start lg:flex-row lg:w-[998px] lg:h-[580px] sm:w-[684px] sm:h-[724px] sm:flex-col'>
             <div className='flex flex-col justify-center items-start text-white'>
-                <p className='pop font-semibold text-[48px] text-white'>Please Confirm</p>
-                <p className='pop font-semibold text-[48px] text-white'>Your Information</p>
+                <div className='pop font-semibold text-[48px] text-white'>Please Confirm</div>
+                <div className='pop font-semibold text-[48px] text-white'>Your Information</div>
             </div>
-            <div className=' flex flex-col text-white bg-white w-[491px] h-[580px] rounded-[24px] p-[32px] pop'>
+            <div className=' flex flex-col text-white bg-white lg:w-[491px] sm:w-full h-[580px] rounded-[24px] p-[32px] pop'>
                 <div className='flex justify-between items-center mb-5'>
                     <div className='pop font-semibold text-[24px] text-[#1B1D22]'>Profile</div>
                     <Link to='/edit' state={location.state}>

@@ -86,7 +86,7 @@ function Signup() {
     <div className="h-screen w-full bg-[url('/signup.svg')] bg-cover bg-center bg-fixed flex flex-col justify-center items-center">
         <Navbar />
         <div className='flex justify-between items-center lg:w-[998px] lg:h-[580px] lg:flex-row 
-        sm:w[684px] sm:h[724px] sm:flex-col'>
+        sm:w-[684px] sm:h-[724px] sm:flex-col'>
             <div className='flex flex-col justify-center items-start text-white sm:w-full'>
                 <div className='flex lg:flex-col lg:justify-center lg:items-start sm:flex-row'>
                     <div className='pop font-semibold text-[48px] text-white sm:mr-2.5'>Enter Your</div>
@@ -128,7 +128,7 @@ function Signup() {
                                 </svg>
                             </div>
                             {isOpen && (
-                                <ul className="absolute top-10 lg:w-[427px] sm:w-[553px] h-[170px] bg-white mt-2 rounded-b-[8px] shadow-md max-h-48 overflow-auto z-10">
+                                <ul className="absolute top-10 lg:w-[427px] sm:w-[620px] h-[170px] bg-white mt-2 rounded-b-[8px] shadow-md max-h-48 overflow-auto z-10">
                                     {data.map((item, index) => (
                                         <li key={index} className={`text-[12px] p-2 cursor-pointer hover:bg-gray-200
                                             ${selectedCode === item.dial_code ? "text-[#1EA5AE] font-semibold" : "text-[#3A3F4A] font-normal"}`}

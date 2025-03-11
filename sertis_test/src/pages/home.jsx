@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="h-screen w-screen bg-[url('/home.svg')] bg-cover bg-center flex flex-col justify-center items-center">
       <Navbar />
-      <div className='flex flex-col justify-center items-center text-white'>
+      <div className='flex flex-col justify-center items-center text-white w-[578px] h-[312px]'>
         <p className='pop font-semibold text-[40px] text-white'>We Have</p>
         <p className='pop font-semibold text-[80px] text-shadow text-white'>A Special Deal</p>
         <p className='old font-normal italic text-[72px] text-white'>For You</p>

@@ -85,13 +85,13 @@ function Signup() {
   return (
     <div className="h-screen w-screen bg-[url('/signup.svg')] bg-cover bg-center flex flex-col justify-center items-center">
         <Navbar />
-        <div className='flex gap-[50px]'>
-            <div className='flex flex-col justify-center items-start text-white'>
+        <div className='flex justify-between items-center w-[998px] h-[580px]'>
+            <div className='left-0 flex flex-col justify-center items-start text-white'>
                 <p className='pop font-semibold text-[48px] text-white'>Enter Your</p>
                 <p className='pop font-semibold text-[48px] text-white'>Information To</p>
                 <p className='old font-normal italic text-[56px] text-white'>Get A Special Deal</p>
             </div>
-            <div className=' flex flex-col text-white bg-white w-[491px] h-[580px] rounded-[24px] p-[32px] pop'> 
+            <div className='flex flex-col text-white bg-white w-[491px] h-[580px] rounded-[24px] p-[32px] pop'> 
                 <div className='pop flex items-center font-semibold text-[24px] text-[#1B1D22] mb-5'>Profile</div>
                 <div className='flex flex-col w-[427px]'>
                     <div className='flex flex-col h-[102px]'>

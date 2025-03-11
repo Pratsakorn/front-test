@@ -101,7 +101,7 @@ function Edit() {
     <div className="h-screen w-full bg-[url('/signup.svg')] bg-cover bg-center flex flex-col justify-center items-center">
         <Navbar />
         <div className='flex justify-between lg:items-center sm:items-start lg:w-[998px] lg:h-[580px] lg:flex-row sm:w-[684px] sm:h-[724px] sm:flex-col'>
-            <div className='flex flex-col justify-center items-start text-white'>
+            <div className='flex flex-col justify-center items-start text-white lg:mb-0 sm:mb-5'>
                 <p className='pop font-semibold text-[48px] text-white'>Edit Your</p>
                 <p className='pop font-semibold text-[48px] text-white'>Information</p>
             </div>

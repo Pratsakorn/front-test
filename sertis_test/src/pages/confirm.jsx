@@ -11,7 +11,7 @@ function Confirm() {
     <div className="h-screen w-full bg-[url('/signup.svg')] bg-cover bg-center flex flex-col justify-center items-center">
         <Navbar />
         <div className='flex justify-between lg:items-center sm:items-start lg:flex-row lg:w-[998px] lg:h-[580px] sm:w-[684px] sm:h-[724px] sm:flex-col'>
-            <div className='flex flex-col justify-center items-start text-white'>
+            <div className='flex flex-col justify-center items-start text-white lg:mb-0 sm:mb-5'>
                 <div className='pop font-semibold text-[48px] text-white'>Please Confirm</div>
                 <div className='pop font-semibold text-[48px] text-white'>Your Information</div>
             </div>

@@ -92,7 +92,7 @@ function Signup() {
                     <div className='pop font-semibold text-[48px] text-white sm:mr-2.5'>Enter Your</div>
                     <div className='pop font-semibold text-[48px] text-white'>Information To</div>
                 </div>
-                <div className='old font-normal italic text-[56px] text-white'>Get A Special Deal</div>
+                <div className='old font-normal italic text-[56px] text-white lg:mb-0 sm:mb-5'>Get A Special Deal</div>
             </div>
             <div className='flex flex-col text-white bg-white lg:w-[491px] sm:w-full h-[580px] rounded-[24px] p-[32px] pop'> 
                 <div className='pop flex items-center font-semibold text-[24px] text-[#1B1D22] mb-5'>Profile</div>

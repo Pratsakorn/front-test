@@ -83,17 +83,20 @@ function Signup() {
     console.log(isFormValid)
 
   return (
-    <div className="h-screen w-screen bg-[url('/signup.svg')] bg-cover bg-center flex flex-col justify-center items-center">
+    <div className="h-screen w-full bg-[url('/signup.svg')] bg-cover bg-center bg-fixed flex flex-col justify-center items-center">
         <Navbar />
-        <div className='flex justify-between items-center w-[998px] h-[580px]'>
-            <div className='left-0 flex flex-col justify-center items-start text-white'>
-                <p className='pop font-semibold text-[48px] text-white'>Enter Your</p>
-                <p className='pop font-semibold text-[48px] text-white'>Information To</p>
-                <p className='old font-normal italic text-[56px] text-white'>Get A Special Deal</p>
+        <div className='flex justify-between items-center lg:w-[998px] lg:h-[580px] lg:flex-row 
+        sm:w[684px] sm:h[724px] sm:flex-col'>
+            <div className='flex flex-col justify-center items-start text-white sm:w-full'>
+                <div className='flex lg:flex-col lg:justify-center lg:items-start sm:flex-row'>
+                    <div className='pop font-semibold text-[48px] text-white sm:mr-2.5'>Enter Your</div>
+                    <div className='pop font-semibold text-[48px] text-white'>Information To</div>
+                </div>
+                <div className='old font-normal italic text-[56px] text-white'>Get A Special Deal</div>
             </div>
-            <div className='flex flex-col text-white bg-white w-[491px] h-[580px] rounded-[24px] p-[32px] pop'> 
+            <div className='flex flex-col text-white bg-white lg:w-[491px] sm:w-full h-[580px] rounded-[24px] p-[32px] pop'> 
                 <div className='pop flex items-center font-semibold text-[24px] text-[#1B1D22] mb-5'>Profile</div>
-                <div className='flex flex-col w-[427px]'>
+                <div className='flex flex-col lg:w-[427px] sm:w-full '>
                     <div className='flex flex-col h-[102px]'>
                         <p className='font-normal text-[14px] text-[#3A3F4A] h-[24px]'>First name</p>
                         <input type='text' placeholder='Enter first name' name='firstName' value={inputForm.firstName} onChange={handleChange} className='h-[24px] text-[#1B1D22] text-start text-[16px] font-normalw-full placeholder-[#AFB4C0] 
@@ -113,7 +116,7 @@ function Signup() {
                         {errors.email && <p className="text-[#FF5454] text-sm">{errors.email}</p>}
                     </div>
                     <div className='flex h-[102px] gap-4'>
-                        <div className='relative flex flex-col w-[120px] cursor-pointer'>
+                        <div className='relative flex flex-col lg:w-[120px] sm:w-[295px] cursor-pointer'>
                             <p className='font-normal text-[14px] text-[#3A3F4A] h-[24px]'>Country code</p>
                             <div className='pop h-[24px] flex justify-between items-center text-[#1B1D22] text-[16px] font-normal w-full
                             border-b border-[#3A3F4A] focus:outline-none' onClick={() => setIsOpen(!isOpen)}>
@@ -125,7 +128,7 @@ function Signup() {
                                 </svg>
                             </div>
                             {isOpen && (
-                                <ul className="absolute top-10 w-[427px] h-[170px] bg-white mt-2 rounded-b-[8px] shadow-md max-h-48 overflow-auto z-10">
+                                <ul className="absolute top-10 lg:w-[427px] sm:w-[553px] h-[170px] bg-white mt-2 rounded-b-[8px] shadow-md max-h-48 overflow-auto z-10">
                                     {data.map((item, index) => (
                                         <li key={index} className={`text-[12px] p-2 cursor-pointer hover:bg-gray-200
                                             ${selectedCode === item.dial_code ? "text-[#1EA5AE] font-semibold" : "text-[#3A3F4A] font-normal"}`}
@@ -148,7 +151,7 @@ function Signup() {
                                 </ul>
                             )}
                         </div>
-                        <div className='flex flex-col w-[291px]'>
+                        <div className='flex flex-col lg:w-[291px] sm:w-full'>
                             <p className='font-normal text-[14px] text-[#3A3F4A] h-[24px]'>Phone number</p>
                             <input type='text' placeholder='Enter phone number'name='phoneNumber' value={inputForm.phoneNumber} onChange={handleChange} className='h-[24px] text-black text-start text-[16px] font-normalw-full placeholder-[#AFB4C0] 
                             border-b border-[#3A3F4A] focus:placeholder-transparent focus:outline-none'/>

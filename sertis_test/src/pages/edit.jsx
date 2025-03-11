@@ -100,7 +100,7 @@ function Edit() {
   return (
     <div className="h-screen w-screen bg-[url('/signup.svg')] bg-cover bg-center flex flex-col justify-center items-center">
         <Navbar />
-        <div className='flex gap-[50px]'>
+        <div className='flex justify-between items-center w-[998px] h-[580px]'>
             <div className='flex flex-col justify-center items-start text-white'>
                 <p className='pop font-semibold text-[48px] text-white'>Edit Your</p>
                 <p className='pop font-semibold text-[48px] text-white'>Information</p>

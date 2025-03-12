@@ -110,20 +110,20 @@ function Edit() {
                 <div className='flex flex-col lg:w-[427px] sm:w-full'>
                     <div className='flex flex-col h-[102px]'>
                         <p className='font-normal text-[14px] text-[#3A3F4A] h-[24px]'>First name</p>
-                        <input type='text' placeholder='Enter first name' name='firstName' value={inputForm.firstName} onChange={handleChange} className='h-[24px] text-[#1B1D22] text-start text-[16px] font-normalw-full placeholder-[#AFB4C0] 
-                        border-b border-[#3A3F4A] focus:placeholder-transparent focus:outline-none'/>
+                        <input type='text' placeholder='Enter first name' name='firstName' value={inputForm.firstName} onChange={handleChange} className={`h-[24px] text-[#1B1D22] text-start text-[16px] font-normalw-full placeholder-[#AFB4C0] 
+                        border-b focus:placeholder-transparent focus:outline-none ${errors.firstName ? "border-[#FF5454]" : "border-[#3A3F4A]"}`}/>
                         {errors.firstName && <p className="text-[#FF5454] text-sm">{errors.firstName}</p>}
                     </div>
                     <div className='flex flex-col h-[102px]'>
                         <p className='font-normal text-[14px] text-[#3A3F4A] h-[24px]'>Last name</p>
-                        <input type='text' placeholder='Enter last name' name='lastName' value={inputForm.lastName} onChange={handleChange} className='h-[24px] text-[#1B1D22] text-start text-[16px] font-normalw-full placeholder-[#AFB4C0] 
-                        border-b border-[#3A3F4A] focus:placeholder-transparent focus:outline-none'/>
+                        <input type='text' placeholder='Enter last name' name='lastName' value={inputForm.lastName} onChange={handleChange} className={`h-[24px] text-[#1B1D22] text-start text-[16px] font-normalw-full placeholder-[#AFB4C0] 
+                        border-b focus:placeholder-transparent focus:outline-none ${errors.lastName ? "border-[#FF5454]" : "border-[#3A3F4A]"}`}/>
                         {errors.lastName && <p className="text-[#FF5454] text-sm">{errors.lastName}</p>}
                     </div>
                     <div className='flex flex-col h-[102px]'>
                         <p className='font-normal text-[14px] text-[#3A3F4A] h-[24px]'>Email</p>
-                        <input type='email' placeholder='Enter email' name='email' value={inputForm.email} onChange={handleChange} className='h-[24px] text-[#1B1D22] text-start text-[16px] font-normalw-full placeholder-[#AFB4C0] 
-                        border-b border-[#3A3F4A] focus:placeholder-transparent focus:outline-none'/>
+                        <input type='email' placeholder='Enter email' name='email' value={inputForm.email} onChange={handleChange} className={`h-[24px] text-[#1B1D22] text-start text-[16px] font-normalw-full placeholder-[#AFB4C0] 
+                        border-b focus:placeholder-transparent focus:outline-none ${errors.email ? "border-[#FF5454]" : "border-[#3A3F4A]"}`}/>
                         {errors.email && <p className="text-[#FF5454] text-sm">{errors.email}</p>}
                     </div>
                     <div className='flex h-[102px] gap-4'>
@@ -164,8 +164,8 @@ function Edit() {
                         </div>
                         <div className='flex flex-col lg:w-[291px] sm:w-full'>
                             <p className='font-normal text-[14px] text-[#3A3F4A] h-[24px]'>Phone number</p>
-                            <input type='text' placeholder='Enter phone number'name='phoneNumber' value={inputForm.phoneNumber} onChange={handleChange} className='h-[24px] text-black text-start text-[16px] font-normalw-full placeholder-[#AFB4C0] 
-                            border-b border-[#3A3F4A] focus:placeholder-transparent focus:outline-none'/>
+                            <input type='text' placeholder='Enter phone number'name='phoneNumber' value={inputForm.phoneNumber} onChange={handleChange} className={`h-[24px] text-black text-start text-[16px] font-normalw-full placeholder-[#AFB4C0] 
+                            border-b focus:placeholder-transparent focus:outline-none ${errors.phoneNumber ? "border-[#FF5454]" : "border-[#3A3F4A]"}`}/>
                             {errors.phoneNumber && <p className="text-[#FF5454] text-sm">{errors.phoneNumber}</p>}
                         </div>
                     </div>
